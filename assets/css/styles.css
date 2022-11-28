@@ -64,7 +64,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: background .4s; /* For dark theme animation */
+  transition: background 0.4s; /* For dark theme animation */
 }
 
 h1,
@@ -120,21 +120,21 @@ body.dark-theme {
 .dark-theme .popular__card {
   box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.2);
 }
-.dark-theme .newsletter__content{
+.dark-theme .newsletter__content {
   background-color: var(--container-color);
 }
 .dark-theme .newsletter__form,
-.dark-theme .newsletter__input{
+.dark-theme .newsletter__input {
   background-color: var(--body-color);
 }
-.dark-theme::-webkit-scrollbar{
-  background-color: hsl(19,8%,15%);
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(19, 8%, 15%);
 }
-.dark-theme::-webkit-scrollbar-thumb{
-  background-color: hsl(19,8%,25%);
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(19, 8%, 25%);
 }
-.dark-theme::-webkit-scrollbar-thumb:hover{
-  background-color: hsl(19,8%,35%);
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 35%);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -395,7 +395,7 @@ body.dark-theme {
   text-align: center;
   box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
   border-radius: 1rem;
-  transition: background .4s; /* For dark theme animation */
+  transition: background 0.4s; /* For dark theme animation */
 }
 .popular__img {
   transition: all ease 0.3s;
@@ -537,7 +537,7 @@ body.dark-theme {
 }
 .newsletter__container,
 .newsletter__form,
-.newsletter__input{
+.newsletter__input {
   transition: background 0.4s; /* For dark theme animation */
 }
 /*=============== FOOTER ===============*/
@@ -699,7 +699,60 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 340px) {
+  .container{
+    margin-inline: 1rem;
+  }
+  .section{
+    padding-block: 4rem 1rem;
+  }
+  .home__title{
+    font-size: 2rem;
+  }
+  .home__leaf-1{
+    top: 5rem;
+  }
+  .home__leaf-2{
+    bottom: 0;
+  }
+  .about__leaf{
+    bottom: 8rem;
+  }
+  .recently__data-img{
+    right: .5rem;
+  }
+  .newsletter__content{
+    padding: 6rem 1rem 2rem;
+  }
+  .newsletter__form{
+    flex-direction: column;
+    background:none;
+    row-gap: 1rem;
+  }
+  .newsletter__input{
+    width: initial;
+    padding: 1rem;
+    border-radius: 4rem;
+  }
+  .newsletter__button{
+    justify-content: center;
+  }
+  .footer__content{
+    gap: 1.5rem;
+  }
+}
 /* For medium devices */
+@media screen and (min-width:576px) {
+  .home__container,
+  .about__container,
+  .recently__container,
+  .newsletter__content{
+    grid-template-columns: .7fr;
+    justify-content: center;
+  }
+  .footer__content{
+    grid-template-columns: repeat(3,max-content);
+  }
+}
 
 /* For large devices */
