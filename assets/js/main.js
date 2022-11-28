@@ -55,7 +55,7 @@ const scrollActive = () => {
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       sectionClass.classList.add("active-link");
     } else {
-      sectionClass.classList.remove("active-link");
+      sectionClass.classList.remove('active-link')
     }
   });
 };
