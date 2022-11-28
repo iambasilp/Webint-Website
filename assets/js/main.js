@@ -33,9 +33,32 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () => {
+  const scrollup = document.querySelector("#scroll-up");
+  // when the scroll is greater than 350 viewport the show scroll class will be added to scrollup
+  this.scrollY >= 350
+    ? scrollup.classList.add("show-scroll")
+    : scrollup.classList.remove("show-scroll");
+};
+window.addEventListener("scroll", scrollUp);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+const scrollActive = ()=>{
+  const scrollY = window.pageYOffset
+  sections.forEach((current)=>{
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58
+    const sectionId = current.getAttribute('id')
+    const sectionClass = document.querySelector(`.nav__menu a[href*="${sectionId}"]`)
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+      sectionClass.classList.add('active-link')
+    }else{
+      sectionClass.classList.remove('active-link')
+    }
+  })
+}
 
+window.addEventListener('scroll',scrollActive)
 /*=============== DARK LIGHT THEME ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
