@@ -7,13 +7,20 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(19, 64%, 54%);
+  /* --first-color: hsl(19, 64%, 54%);
   --first-color-alt: hsl(19, 64%, 52%);
   --title-color: hsl(19, 16%, 15%);
   --text-color: hsl(19, 16%, 35%);
   --text-color-light: hsl(19, 8%, 55%);
-  --body-color: hsl(19, 100%, 96%);
-  --container-color: hsl(19, 100%, 97%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(19, 100%, 97%); */
+  --first-color: hsl(243.46,100%,69.41%);
+  --first-color-alt: hsl(243.46,100%,67.41%);
+  --title-color: hsl(244.8,17.01%,28.82%);
+  --text-color:hsl(244.8,17.01%,28.82%);
+  --text-color-light:rgb(123, 123, 143);
+  --body-color: hsl(0,0%,94.9%);
+  --container-color: rgb(217, 217, 235);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -101,12 +108,12 @@ img {
 }
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(19, 64%, 58%);
-  --first-color-alt: hsl(19, 64%, 54%);
-  --title-color: hsl(19, 24%, 85%);
-  --text-color: hsl(19, 16%, 65%);
-  --body-color: hsl(19, 12%, 8%);
-  --container-color: hsl(19, 10%, 10%);
+  --first-color: hsl(243.46,100%,73.41%);
+  --first-color-alt: hsl(243.46,100%,69.41%);
+  --title-color: rgb(212, 210, 231);
+  --text-color:hsl(244.8,17.01%,58.82%);
+  --body-color: rgb(13, 13, 17);
+  --container-color: rgb(23, 23, 29);
 }
 /*========== 
     Color changes in some parts of 
@@ -115,10 +122,10 @@ body.dark-theme {
 .dark-theme .scroll-header,
 .dark-theme .nav__menu,
 .dark-theme .scrollup {
-  box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.5);
+  box-shadow: 0 2px 8px rgba(29, 29, 77, 0.5);
 }
-.dark-theme .popular__card {
-  box-shadow: 0 2px 8px hsla(19, 64%, 4%, 0.2);
+.dark-theme .books__card {
+  box-shadow: 0 2px 8px rgba(29, 29, 77, 0.2);
 }
 .dark-theme .newsletter__content {
   background-color: var(--container-color);
@@ -128,13 +135,13 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 .dark-theme::-webkit-scrollbar {
-  background-color: hsl(19, 8%, 15%);
+  background-color: rgb(41, 41, 49);
 }
 .dark-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(19, 8%, 25%);
+  background-color: rgb(60, 60, 70);
 }
 .dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(19, 8%, 35%);
+  background-color:rgb(87, 87, 100);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -206,7 +213,7 @@ body.dark-theme {
   transition: color 0.4s;
 }
 .nav__logo img {
-  width: 25px;
+  width: 35px;
 }
 .nav__toggle {
   font-size: 1.5rem;
@@ -220,7 +227,7 @@ body.dark-theme {
     background-color: var(--body-color);
     width: 100%;
     padding-block: 3.5rem;
-    box-shadow: 0 8px 20px hsla(19, 64%, 24%, 0.1);
+    box-shadow: 0 8px 20px rgba(31, 31, 117, 0.5);
     transition: top 0.4s;
   }
 }
@@ -245,23 +252,6 @@ body.dark-theme {
   right: 1rem;
   cursor: pointer;
 }
-.nav__leaf-1,
-.nav__leaf-2 {
-  position: absolute;
-  opacity: 0.2;
-}
-.nav__leaf-1 {
-  width: 100px;
-  top: 0.75rem;
-  left: -2rem;
-  transform: rotate(165deg);
-}
-.nav__leaf-2 {
-  width: 50px;
-  right: -1rem;
-  bottom: 0;
-  transform: rotate(-30deg);
-}
 /* Show menu */
 .show-menu {
   top: 0;
@@ -282,7 +272,7 @@ body.dark-theme {
 }
 .home__container {
   row-gap: 3rem;
-  padding-top: 2rem;
+  padding-top:1rem;
 }
 .home__img {
   width: 300px;
@@ -297,7 +287,7 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 .home__title img {
-  width: 40px;
+  width: 30px;
 }
 .home__title div {
   display: flex;
@@ -308,23 +298,6 @@ body.dark-theme {
 .home__description {
   padding: 0 1rem;
   margin-bottom: 2.5rem;
-}
-.home__leaf-1,
-.home__leaf-2 {
-  position: absolute;
-  opacity: 0.2;
-}
-.home__leaf-1 {
-  width: 80px;
-  top: 8rem;
-  left: -1rem;
-  transform: rotate(90deg);
-}
-.home__leaf-2 {
-  width: 100px;
-  right: -2rem;
-  bottom: 1rem;
-  transform: rotate(-15deg);
 }
 /*=============== BUTTON ===============*/
 .button {
@@ -369,26 +342,19 @@ body.dark-theme {
   column-gap: 0.5rem;
 }
 .about__img {
-  width: 300px;
+  width: 220px;
   justify-self: center;
 }
-.about__leaf {
-  position: absolute;
-  opacity: 0.2;
-  width: 100px;
-  right: -1.5rem;
-  bottom: 11rem;
-  transform: rotate(-15deg);
-}
 
-/*=============== POPULAR ===============*/
-.popular__container {
+
+/*=============== books ===============*/
+.books__container {
   padding-top: 4rem;
   grid-template-columns: 250px;
   justify-content: center;
   row-gap: 5.5rem;
 }
-.popular__card {
+.books__card {
   position: relative;
   background-color: var(--container-color);
   padding: 7rem 2rem 1.5rem;
@@ -397,30 +363,30 @@ body.dark-theme {
   border-radius: 1rem;
   transition: background 0.4s; /* For dark theme animation */
 }
-.popular__img {
+.books__img {
   transition: all ease 0.3s;
   width: 220px;
   position: absolute;
   inset: 0;
-  top: -2.5rem;
+  top: -4rem;
   margin: 0 auto;
 }
-.popular__name {
+.books__name {
   font-size: var(--h3-font-size);
   font-family: var(--title-font);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.45rem;
 }
-.popular__description {
+.books__description {
   display: block;
   font-size: var(--smaller-font-size);
   margin-bottom: 1rem;
 }
-.popular__price {
-  font-size: var(--h3-font-size);
+.books__details {
+  font-size: var(--h5-font-size);
   font-weight: var(--font-medium);
   color: var(--first-color);
 }
-.popular__button {
+.books__button {
   display: flex;
   background-color: var(--first-color);
   padding: 6px;
@@ -429,17 +395,17 @@ body.dark-theme {
   outline: none;
   color: #fff;
   font-size: 1.5rem;
-  box-shadow: 0 4px 20px hsla(19, 64%, 20%);
+  box-shadow: 0 4px 20px rgba(26, 26, 112, 0.5);
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
   cursor: pointer;
   transition: background 0.3s;
 }
-.popular__button:hover {
+.books__button:hover {
   background-color: var(--first-color-alt);
 }
-.popular__card:hover .popular__img {
+.books__card:hover .books__img {
   transform: translateY(-0.25rem);
 }
 
@@ -457,33 +423,9 @@ body.dark-theme {
 .recently__description {
   margin-bottom: 2rem;
 }
-.recently__data-img {
-  width: 25px;
-  position: absolute;
-  top: 3.5rem;
-  right: 1.5rem;
-  transform: rotate(30deg);
-}
 .recently__img {
   width: 300px;
   justify-self: center;
-}
-.recently__leaf-1,
-.recently__leaf-2 {
-  position: absolute;
-  opacity: 0.2;
-}
-.recently__leaf-1 {
-  width: 80px;
-  top: 17rem;
-  left: -1rem;
-  transform: rotate(15deg);
-}
-.recently__leaf-2 {
-  width: 40px;
-  right: -1rem;
-  bottom: 12rem;
-  transform: rotate(-30deg);
 }
 /*=============== NEWSLETTER ===============*/
 .newsletter__container {
@@ -491,7 +433,7 @@ body.dark-theme {
 }
 .newsletter__content {
   position: relative;
-  background-color: hsl(19, 24%, 15%);
+  background-color:rgb(31, 30, 61);
   border-radius: 2.5rem;
   text-align: center;
   overflow: hidden;
@@ -502,7 +444,7 @@ body.dark-theme {
   width: 250px;
   position: absolute;
   top: -4.5rem;
-  left: -8rem;
+  left: -7rem;
 }
 .newsletter__content .section__title {
   color: #fff;
@@ -527,13 +469,6 @@ body.dark-theme {
 }
 .newsletter__button {
   cursor: pointer;
-}
-.newsletter__spinach {
-  width: 30px;
-  position: absolute;
-  right: 2rem;
-  bottom: -2rem;
-  transform: rotate(45deg);
 }
 .newsletter__container,
 .newsletter__form,
@@ -668,11 +603,11 @@ body.dark-theme {
   background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(16, 8%, 65%);
+  background-color: rgb(164, 164, 173);
   border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(16, 5%, 55%);
+  background-color: rgb(150, 150, 158);
 }
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -683,7 +618,7 @@ body.dark-theme {
   padding: 0.35rem;
   border-radius: 0.25rem;
   font-size: 1.1rem;
-  box-shadow: hsla(19, 64%, 24%, 0.1);
+  box-shadow: rgba(30, 30, 119, 0.5);
   color: var(--first-color);
   z-index: var(--z-tooltip);
   background-color:var(--first-color);
@@ -776,7 +711,7 @@ body.dark-theme {
   .dark-theme .nav__menu{
     box-shadow: none;
   }
-  .popular__container{
+  .books__container{
     grid-template-columns: repeat(2,250px);
   }
   .footer__content{
@@ -805,7 +740,7 @@ body.dark-theme {
     text-align: initial;
   }
   .home__title img{
-    width: 60px;
+    width: 50px;
   }
   .home__title div{
    justify-content: initial;
@@ -841,21 +776,21 @@ body.dark-theme {
     width: 50px;
   }
   .about__img{
-    width: 450px;
+    width: 330px;
   }
-  .popular__container{
+  .books__container{
     grid-template-columns: repeat(3,262px);
     column-gap: 3.5rem;
     padding-block: 6rem 4rem;
   }
-  .popular__card{
+  .books__card{
     padding: 7.5rem 2rem 2rem;
     border-radius: 1.5rem;
   }
-  .popular__img{
+  .books__img{
     width: 230px;
   }
-  .popular__button{
+  .books__button{
     bottom: 2rem;
   }
   .recently__container{
