@@ -701,6 +701,7 @@ body.dark-theme {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
+<<<<<<< HEAD
   .container {
     margin-inline: 1rem;
   }
@@ -735,14 +736,22 @@ body.dark-theme {
     padding: 1rem;
     border-radius: 4rem;
   }
+<<<<<<< HEAD
   .newsletter__button {
     justify-content: center;
   }
   .footer__content {
+=======
+  .newsletter__button{
+    justify-content: center;
+  }
+  .footer__content{
+>>>>>>> ab2943e3cd62c4dc3cde5308481500fce7acb40a
     gap: 1.5rem;
   }
 }
 /* For medium devices */
+<<<<<<< HEAD
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
@@ -780,6 +789,18 @@ body.dark-theme {
   }
   .footer__content{
     grid-template-columns: repeat(4,max-content);
+=======
+@media screen and (min-width:576px) {
+  .home__container,
+  .about__container,
+  .recently__container,
+  .newsletter__content{
+    grid-template-columns: .7fr;
+    justify-content: center;
+  }
+  .footer__content{
+    grid-template-columns: repeat(3,max-content);
+>>>>>>> ab2943e3cd62c4dc3cde5308481500fce7acb40a
   }
 }
 
