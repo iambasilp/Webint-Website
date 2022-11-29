@@ -107,4 +107,4 @@ sr.reveal('.home__img, .newsletter__container,.footer__logo,.footer__description
 sr.reveal('.home__data',{origin:"bottom"})
 sr.reveal('.about__img, .recently__img',{origin:"right"})
 sr.reveal('.about__data , .recently__data , .newsletter__button',{origin:"left"})
-// sr.reveal('.books__card',{interval:70})
+sr.reveal('.books__card',{interval:70})
