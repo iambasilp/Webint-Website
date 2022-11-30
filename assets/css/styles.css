@@ -389,7 +389,7 @@ body.dark-theme {
 .books__button {
   display: flex;
   background-color: var(--first-color);
-  padding: 6px;
+  padding: 8px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -664,6 +664,9 @@ body.dark-theme {
     flex-direction: column;
     background: none;
     row-gap: 1rem;
+  }
+  .dark-theme .newsletter__form{
+    background: none;
   }
   .newsletter__input {
     width: initial;
