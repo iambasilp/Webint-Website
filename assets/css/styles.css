@@ -736,8 +736,8 @@ body.dark-theme {
     padding-block: 7rem 3rem;
   }
   .home__data{
-    order: -1;
     text-align: initial;
+    order: -1;
   }
   .home__title img{
     width: 50px;
@@ -917,7 +917,7 @@ body.dark-theme {
   }
 }
 
-
+/* Created By Basil Pulikuth */
 
 
 

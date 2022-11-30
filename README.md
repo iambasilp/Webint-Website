@@ -8,8 +8,8 @@
 
 ## Previews
 
-![Mobile](./assets/preview/mobile.png)
-![Desktop](./assets/preview/desktop.png)
+![Mobile](./preview/mobile.png)
+![Desktop](./preview/desktop.png)
 
 
 

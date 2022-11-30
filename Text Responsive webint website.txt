@@ -1,1 +1,136 @@
-..
+========== HEADER ==========
+.nav__logo
+Webint
+
+.nav__link
+Home
+
+About Us
+
+Books
+
+Recently
+
+========== HOME ==========
+.home__title
+Designers
+Web docs
+
+.home__description
+Lorem ipsum dolor sit amet consectetur
+adipisicing elit. Quidem enim nobis dolorum
+
+.button
+Find Now
+
+
+========== ABOUT ==========
+.section__subtitle
+About Us
+
+.section__title
+We Provide 
+Frontend Notes
+
+.about__description
+Lorem ipsum, dolor sit amet consectetur
+adipisicing elit.Voluptate officiis voluptatibus 
+illoquisquam esse eaque. Amet provident assumenda 
+modi quaerat, ad non
+
+
+========== BOOKS  ==========
+.section__subtitle
+The Best collection
+
+.section__title
+Books Catagory
+
+.books__name .books__description .books__details .books__button
+Html
+HTML stands for Hyper Text Markup Language
+Read More
+---download link
+
+Css
+CSS stands for Cascading Style Sheets
+Read More
+---download link
+
+Javascript
+JavaScript is the Programming Language for the Web
+Read More
+--download link
+
+
+========== RECENTLY ==========
+.section__subtitle
+Recently Added
+
+.section__title
+Start JavaScript Library <br>
+React Js
+
+.recently__description
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea a modi ullam aliquam dolor id.
+
+.button
+Find Now
+
+
+========== NEWSLETTER ==========
+.section__subtitle
+Newsletter
+
+.section__title
+Subscribe For <br>
+Extra Support
+
+.newsletter__input
+Enter email
+
+.newsletter__button
+Subscribe
+
+
+========== FOOTER ==========
+.footer__logo
+Webint
+
+.footer__description
+Lorem ipsum dolor sit<br>
+amet consectetur adipisicing elit.<br>
+placeat reiciendis
+
+.footer__title | .footer__link
+Main Menu
+About
+Menus
+Offer
+Events
+
+Information
+Contact
+Ideas
+Videos
+Notes
+
+Address
+Development World <br>
+Earth 
+10AM - 12PM
+
+Social Media
+
+.footer__social-link
+https://www.github.com/
+https://www.instagram.com/
+https://twitter.com/
+
+Original link from Webint
+github
+instagram
+twitter
+
+.footer__copy
+&#169; Copyright Webint Designers. All rights reserved
